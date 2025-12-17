@@ -1,0 +1,15 @@
+{
+  "originHash" : "30ef5d6ea403f4be6bb9afcd5525f68a36d3c96be326cc30cc515205893470d9",
+  "pins" : [
+    {
+      "identity" : "variables",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leviouwendijk/Variables.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "c533569cd399d8d4762f5f4f8241e2234735c6d0"
+      }
+    }
+  ],
+  "version" : 3
+}
