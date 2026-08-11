@@ -1,13 +1,13 @@
 {
-  "originHash" : "30ef5d6ea403f4be6bb9afcd5525f68a36d3c96be326cc30cc515205893470d9",
+  "originHash" : "7dd6cdb28030c671a45db878ee49aab930bfb4a358339a85193b0ac13ed62572",
   "pins" : [
     {
-      "identity" : "variables",
+      "identity" : "primitives",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leviouwendijk/Variables.git",
+      "location" : "https://github.com/leviouwendijk/Primitives.git",
       "state" : {
         "branch" : "master",
-        "revision" : "c533569cd399d8d4762f5f4f8241e2234735c6d0"
+        "revision" : "6c87b862779cca1371d975c33068ddf363e0fe3f"
       }
     }
   ],

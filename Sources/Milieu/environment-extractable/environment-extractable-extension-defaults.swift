@@ -1,4 +1,5 @@
 import Foundation
+import Primitives
 
 /// Key configurations
 extension EnvironmentExtractable {
@@ -8,6 +9,7 @@ extension EnvironmentExtractable {
     public func infer() -> String {
         self
         .rawValue
+        .casing
         .snake()
         .uppercased()
     }

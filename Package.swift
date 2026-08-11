@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "Milieu",
+    platforms: [
+        .macOS(.v13)
+    ],
     products: [
         .library(
             name: "Milieu",
@@ -12,18 +15,16 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/leviouwendijk/Variables.git", branch: "master")
+        // .package(url: "https://github.com/leviouwendijk/Variables.git", branch: "master")
+        .package(url: "https://github.com/leviouwendijk/Primitives.git", branch: "master")
     ],
     targets: [
         .target(
             name: "Milieu",
             dependencies: [
-                .product(name: "Variables", package: "Variables")
+                // .product(name: "Variables", package: "Variables")
+                .product(name: "Primitives", package: "Primitives")
             ]
-        ),
-        .testTarget(
-            name: "MilieuTests",
-            dependencies: ["Milieu"]
         ),
     ]
 )
