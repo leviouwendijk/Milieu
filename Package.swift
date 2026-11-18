@@ -17,6 +17,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/leviouwendijk/Variables.git", branch: "master"),
         .package(url: "https://github.com/leviouwendijk/Primitives.git", branch: "master"),
+        .package(url: "https://github.com/leviouwendijk/Readers.git", branch: "master"),
     ],
     targets: [
         .target(
@@ -24,6 +25,7 @@ let package = Package(
             dependencies: [
                 .product(name: "Variables", package: "Variables"),
                 .product(name: "Primitives", package: "Primitives"),
+                .product(name: "Readers", package: "Readers"),
             ]
         ),
     ]

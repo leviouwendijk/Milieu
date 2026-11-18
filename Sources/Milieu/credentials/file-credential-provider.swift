@@ -1,4 +1,5 @@
 import Foundation
+import Readers
 
 /// Explicit trusted reference-to-URL mapping, not arbitrary caller-supplied paths.
 public struct FileCredentialProvider: CredentialProvider {
@@ -12,6 +13,6 @@ public struct FileCredentialProvider: CredentialProvider {
         guard let url = files[reference], url.isFileURL else {
             throw CredentialError.missing(reference.id)
         }
-        return try CredentialMaterial(Data(contentsOf: url))
+        return try CredentialMaterial(DataFileReader(url).read().data)
     }
 }

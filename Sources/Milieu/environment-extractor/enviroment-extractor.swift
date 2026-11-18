@@ -1,4 +1,5 @@
 import Foundation
+import Readers
 import Variables
 
 public enum EnvironmentExtractor {
@@ -198,7 +199,7 @@ extension EnvironmentExtractor {
         let path_value = try value(key, replacer: replacer)
         // let url = path_value.path_url() // decouple from plate, avoid Methods import for just this
         let url = URL(fileURLWithPath: path_value)
-        return try Data(contentsOf: url)
+        return try DataFileReader(url).read().data
     }
 
     public static func base64_data(
